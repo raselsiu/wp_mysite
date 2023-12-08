@@ -14,7 +14,7 @@
 </head>
 <body <?php body_class()?>>
     
-    <div id="header">
+    <div id="header_area">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -22,7 +22,9 @@
                         <img src="<?php echo get_theme_mod('raselsiu16_logo')?>" alt="logo" width="80"/>
                     </a>
                 </div>
-                <div class="col-md-9"></div>
+                <div class="col-md-9">
+                    <?php wp_nav_menu( array('theme_location' => 'main_menu', 'menu_id' => 'nav') ) ?>
+                </div>
             </div>
         </div>
     </div>
